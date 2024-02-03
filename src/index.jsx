@@ -9,7 +9,9 @@ const appStore = store();
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <React.StrictMode store={appStore}>
-    <App />
+  <React.StrictMode>
+    <Provider store={appStore}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );

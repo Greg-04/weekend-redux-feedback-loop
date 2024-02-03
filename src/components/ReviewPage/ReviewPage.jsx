@@ -12,10 +12,10 @@ function ReviewPage() {
       <div>
         <h2>Review Your Feedback</h2>
         <ul>
-          <li>Feeling:{feeling}</li>
-          <li>Understanding:{understanding}</li>
-          <li>Support:{supported}</li>
-          <li>Comments:{comments}</li>
+          <li>Feeling: {feeling}</li>
+          <li>Understanding: {understanding}</li>
+          <li>Support: {supported}</li>
+          <li>Comments: {comments}</li>
           <button>Submit</button>
         </ul>
       </div>

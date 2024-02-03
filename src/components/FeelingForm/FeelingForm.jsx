@@ -9,7 +9,7 @@ function FeelingForm() {
       <h2>How are you feeling today?</h2>
       <div>
         Feeling?
-        <input></input>
+        <input type="number"></input>
       </div>
       <div>
         <button>NEXT</button>

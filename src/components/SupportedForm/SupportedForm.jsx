@@ -9,7 +9,7 @@ function SupportedForm() {
       <h2>How well are you being supported?</h2>
       <div>
         Support?
-        <input></input>
+        <input type="number"></input>
       </div>
       <div>
         <button>NEXT</button>

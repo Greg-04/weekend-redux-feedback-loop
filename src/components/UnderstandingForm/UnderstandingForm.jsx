@@ -9,7 +9,7 @@ function UnderstandingForm() {
       <h2>How well are you understanding the content?</h2>
       <div>
         Understanding?
-        <input></input>
+        <input type="number"></input>
       </div>
       <div>
         <button>NEXT</button>

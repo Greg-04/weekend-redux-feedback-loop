@@ -1,4 +1,5 @@
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 function SupportedForm() {
   //setting up dispatch
@@ -12,7 +13,9 @@ function SupportedForm() {
         <input type="number"></input>
       </div>
       <div>
-        <button>NEXT</button>
+        <button>
+          <Link to="/commentsForm">NEXT</Link>
+        </button>
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 function FeelingForm() {
   //setting up dispatch
@@ -12,7 +13,7 @@ function FeelingForm() {
         <input type="number"></input>
       </div>
       <div>
-        <button>NEXT</button>
+        <button><Link to="/understandingForm">NEXT</Link></button>
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 function CommentsForm() {
   //setting up dispatch
@@ -12,7 +13,9 @@ function CommentsForm() {
         <input></input>
       </div>
       <div>
-        <button>NEXT</button>
+        <button>
+          <Link to="/reviewPage">NEXT</Link>
+        </button>
       </div>
     </>
   );

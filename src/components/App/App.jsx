@@ -7,6 +7,7 @@ import UnderstandingForm from '../UnderstandingForm/UnderstandingForm';
 import SupportedForm from '../SupportedForm/SupportedForm';
 import CommentsForm from '../CommentsForm/CommentsForm';
 import ReviewPage from '../ReviewPage/ReviewPage';
+import SubmitFeedback from '../SubmitFeedback/SubmitFeedback';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route path="/reviewPage" exact>
             <ReviewPage />
+          </Route>
+          <Route path="/submitFeedback" exact>
+            <SubmitFeedback/>
           </Route>
         </Router>
       </main>

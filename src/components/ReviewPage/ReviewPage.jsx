@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 function ReviewPage() {
   //Setting up global count state
@@ -16,7 +17,9 @@ function ReviewPage() {
           <li>Understanding: {understanding}</li>
           <li>Support: {supported}</li>
           <li>Comments: {comments}</li>
-          <button>Submit</button>
+          <button>
+            <Link to="/submitFeedback">Submit</Link>
+          </button>
         </ul>
       </div>
     </>

@@ -17,6 +17,9 @@ function understanding(state = 0, action) {
 }
 
 function supported(state = 0, action) {
+  if (action.type === 'SUPPORT_ADD') {
+    return action.payload;
+  }
   return state;
 }
 

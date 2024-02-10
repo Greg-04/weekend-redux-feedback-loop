@@ -1,9 +1,11 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import logger from 'redux-logger';
 
-
 // Creating reducers here:
 function feeling(state = 0, action) {
+  if (action.type === 'FEELING_ADD') {
+    return action.payload;
+  }
   return state;
 }
 
@@ -18,7 +20,6 @@ function supported(state = 0, action) {
 function comments(state = '', action) {
   return state;
 }
-
 
 // Storing Reducers
 export const store = () =>

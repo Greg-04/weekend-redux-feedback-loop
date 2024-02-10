@@ -14,7 +14,7 @@ function SubmitFeedback() {
       </div>
       <main>
         <h2>Thank You!</h2>
-        <button onClick={handleClickNewFeedback}>Leave New Feedback</button>
+        <button onClick={handleClickNewFeedback} data-testid="next">Leave New Feedback</button>
       </main>
     </>
   );

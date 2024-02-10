@@ -8,15 +8,17 @@ function SupportedForm() {
   return (
     <>
       <h2>How well are you being supported?</h2>
-      <div>
-        Support?
-        <input type="number"></input>
-      </div>
-      <div>
-        <button>
-          <Link to="/commentsForm">NEXT</Link>
-        </button>
-      </div>
+      <form>
+        <div>
+          Support?
+          <input data-testid="input" type="number" />
+        </div>
+        <div>
+          <button data-testid="next">
+            <Link to="/commentsForm">NEXT</Link>
+          </button>
+        </div>
+      </form>
     </>
   );
 }

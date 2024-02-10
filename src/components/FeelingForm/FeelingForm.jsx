@@ -8,13 +8,17 @@ function FeelingForm() {
   return (
     <>
       <h2>How are you feeling today?</h2>
-      <div>
-        Feeling?
-        <input type="number"></input>
-      </div>
-      <div>
-        <button><Link to="/understandingForm">NEXT</Link></button>
-      </div>
+      <form>
+        <div>
+          Feeling?
+          <input data-testid="input" type="number"/>
+        </div>
+        <div>
+          <button data-testid="next">
+            <Link to="/understandingForm">NEXT</Link>
+          </button>
+        </div>
+      </form>
     </>
   );
 }

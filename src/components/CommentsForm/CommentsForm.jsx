@@ -8,15 +8,17 @@ function CommentsForm() {
   return (
     <>
       <h2>Any comments you want to leave?</h2>
-      <div>
-        Comments
-        <input></input>
-      </div>
-      <div>
-        <button>
-          <Link to="/reviewPage">NEXT</Link>
-        </button>
-      </div>
+      <form>
+        <div>
+          Comments
+          <input data-testid="input" type="text"/>
+        </div>
+        <div>
+          <button data-testid="next">
+            <Link to="/reviewPage">NEXT</Link>
+          </button>
+        </div>
+      </form>
     </>
   );
 }

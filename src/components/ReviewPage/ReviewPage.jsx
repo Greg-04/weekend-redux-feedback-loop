@@ -17,7 +17,7 @@ function ReviewPage() {
           <li>Understanding: {understanding}</li>
           <li>Support: {supported}</li>
           <li>Comments: {comments}</li>
-          <button>
+          <button data-testid="next">
             <Link to="/submitFeedback">Submit</Link>
           </button>
         </ul>

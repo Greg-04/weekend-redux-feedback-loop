@@ -8,15 +8,17 @@ function UnderstandingForm() {
   return (
     <>
       <h2>How well are you understanding the content?</h2>
-      <div>
-        Understanding?
-        <input type="number"></input>
-      </div>
-      <div>
-        <button>
-          <Link to="/supportedForm">NEXT</Link>
-        </button>
-      </div>
+      <form>
+        <div>
+          Understanding?
+          <input data-testid="input" type="number"/>
+        </div>
+        <div>
+          <button data-testid="next">
+            <Link to="/supportedForm">NEXT</Link>
+          </button>
+        </div>
+      </form>
     </>
   );
 }

@@ -24,6 +24,9 @@ function supported(state = 0, action) {
 }
 
 function comments(state = '', action) {
+  if (action.type === 'COMMENT_ADD') {
+    return action.payload;
+  }
   return state;
 }
 

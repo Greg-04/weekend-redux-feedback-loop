@@ -5,6 +5,8 @@ import logger from 'redux-logger';
 function feeling(state = 0, action) {
   if (action.type === 'FEELING_ADD') {
     return action.payload;
+  } else if (action.type === 'RESET_FEEDBACK') {
+    return (state = 0);
   }
   return state;
 }
@@ -12,13 +14,17 @@ function feeling(state = 0, action) {
 function understanding(state = 0, action) {
   if (action.type === 'UNDERSTANDING_ADD') {
     return action.payload;
+  } else if (action.type === 'RESET_FEEDBACK') {
+    return (state = 0);
   }
   return state;
 }
 
-function supported(state = 0, action) {
+function support(state = 0, action) {
   if (action.type === 'SUPPORT_ADD') {
     return action.payload;
+  } else if (action.type === 'RESET_FEEDBACK') {
+    return (state = 0);
   }
   return state;
 }
@@ -26,6 +32,8 @@ function supported(state = 0, action) {
 function comments(state = '', action) {
   if (action.type === 'COMMENT_ADD') {
     return action.payload;
+  } else if (action.type === 'RESET_FEEDBACK') {
+    return (state = '');
   }
   return state;
 }
@@ -37,7 +45,7 @@ export const store = () =>
       // Putting reducers into the redux store here:
       feeling,
       understanding,
-      supported,
+      support,
       comments,
     }),
     applyMiddleware(logger)

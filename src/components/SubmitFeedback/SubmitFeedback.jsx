@@ -3,15 +3,6 @@ import { useHistory } from 'react-router-dom';
 function SubmitFeedback() {
   const history = useHistory();
 
-  // axios
-  // .post('/api/feedback', { feeling })
-  // .then((response) => {
-  //   console.log('feeling added successfully');
-  // })
-  // .catch((error) => {
-  //   console.log('ERROR:', error);
-  // });
-
   const handleClickNewFeedback = () => {
     history.push('/');
   };

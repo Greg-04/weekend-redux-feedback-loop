@@ -21,7 +21,6 @@ function CommentsForm() {
 
   //handle name input change
   const handleChangeComment = (event) => {
-    console.log(inputComment);
     setInputComment(event.target.value);
   };
 

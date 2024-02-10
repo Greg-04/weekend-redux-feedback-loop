@@ -1,13 +1,10 @@
-// import { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function FeelingForm() {
   //Setting up local state of feeling
   const [inputFeeling, setInputFeeling] = useState('');
-  //Setting up global count state
-  const feeling = useSelector((state) => state.feeling);
   //Setting up useDispatch
   const dispatch = useDispatch();
 

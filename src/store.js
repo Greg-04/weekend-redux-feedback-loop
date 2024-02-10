@@ -10,6 +10,9 @@ function feeling(state = 0, action) {
 }
 
 function understanding(state = 0, action) {
+  if (action.type === 'UNDERSTANDING_ADD') {
+    return action.payload;
+  }
   return state;
 }
 

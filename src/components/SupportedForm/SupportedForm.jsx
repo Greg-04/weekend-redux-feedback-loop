@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './SupportedForm.css';
 
 function SupportedForm() {
   //Setting up local state of understanding
@@ -27,23 +28,25 @@ function SupportedForm() {
 
   return (
     <>
-      <h2>How well are you being supported?</h2>
-      <form>
-        <div>
-          Support?
-          <input
-            data-testid="input"
-            type="number"
-            onChange={handleChangeSupport}
-            value={inputSupport}
-          />
-        </div>
-        <div>
-          <button onClick={handleAddSupport} data-testid="next">
-            <Link to="/commentsForm">NEXT</Link>
-          </button>
-        </div>
-      </form>
+      <main className="supported">
+        <h2>How well are you being supported?</h2>
+        <form>
+          <div>
+            Support?
+            <input
+              data-testid="input"
+              type="number"
+              onChange={handleChangeSupport}
+              value={inputSupport}
+            />
+          </div>
+          <div>
+            <button onClick={handleAddSupport} data-testid="next">
+              <Link to="/commentsForm">NEXT</Link>
+            </button>
+          </div>
+        </form>
+      </main>
     </>
   );
 }

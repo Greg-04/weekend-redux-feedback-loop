@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './CommentsForm.css';
 
 function CommentsForm() {
   //Setting up local state of understanding
@@ -26,23 +27,25 @@ function CommentsForm() {
 
   return (
     <>
-      <h2>Any comments you want to leave?</h2>
-      <form>
-        <div>
-          Comments
-          <input
-            data-testid="input"
-            type="text"
-            onChange={handleChangeComment}
-            value={inputComment}
-          />
-        </div>
-        <div>
-          <button onClick={handleAddComment} data-testid="next">
-            <Link to="/reviewPage">NEXT</Link>
-          </button>
-        </div>
-      </form>
+      <main className="comments">
+        <h2>Any comments you want to leave?</h2>
+        <form>
+          <div>
+            Comments
+            <input
+              data-testid="input"
+              type="text"
+              onChange={handleChangeComment}
+              value={inputComment}
+            />
+          </div>
+          <div>
+            <button onClick={handleAddComment} data-testid="next">
+              <Link to="/reviewPage">NEXT</Link>
+            </button>
+          </div>
+        </form>
+      </main>
     </>
   );
 }

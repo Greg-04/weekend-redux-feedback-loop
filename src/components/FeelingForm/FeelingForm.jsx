@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './FeelingForm.css';
 
 function FeelingForm() {
   //Setting up local state of feeling
@@ -24,6 +25,7 @@ function FeelingForm() {
 
   return (
     <>
+      <main className="feeling">
       <h2>How are you feeling today?</h2>
       <form>
         <div>
@@ -41,6 +43,7 @@ function FeelingForm() {
           </button>
         </div>
       </form>
+      </main>
     </>
   );
 }

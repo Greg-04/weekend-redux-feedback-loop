@@ -1,4 +1,5 @@
 import { useHistory } from 'react-router-dom';
+import './SubmitFeedback.css';
 
 function SubmitFeedback() {
   const history = useHistory();
@@ -9,10 +10,10 @@ function SubmitFeedback() {
 
   return (
     <>
-      <div>
-        <h2>Feedback!</h2>
-      </div>
-      <main>
+      <main className="feedback">
+        <div>
+          <h2>Feedback!</h2>
+        </div>
         <h2>Thank You!</h2>
         <button onClick={handleClickNewFeedback} data-testid="next">
           Leave New Feedback

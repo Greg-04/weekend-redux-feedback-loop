@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import './ReviewPage.css';
 
 function ReviewPage() {
   //Setting up global count state
@@ -32,18 +33,20 @@ function ReviewPage() {
 
   return (
     <>
-      <div>
-        <h2>Review Your Feedback</h2>
-        <ul>
-          <li>Feeling: {feeling}</li>
-          <li>Understanding: {understanding}</li>
-          <li>Support: {support}</li>
-          <li>Comments: {comments}</li>
-          <button data-testid="next" onClick={handleSubmit}>
-            <Link to="/submitFeedback">Submit</Link>
-          </button>
-        </ul>
-      </div>
+      <main className="review">
+        <div>
+          <h2>Review Your Feedback</h2>
+          <ul>
+            <li>Feeling: {feeling}</li>
+            <li>Understanding: {understanding}</li>
+            <li>Support: {support}</li>
+            <li>Comments: {comments}</li>
+            <button data-testid="next" onClick={handleSubmit}>
+              <Link to="/submitFeedback">Submit</Link>
+            </button>
+          </ul>
+        </div>
+      </main>
     </>
   );
 }

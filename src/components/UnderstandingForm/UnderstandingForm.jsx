@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './UnderstandingForm.css';
 
 function UnderstandingForm() {
   //Setting up local state of understanding
@@ -27,23 +28,25 @@ function UnderstandingForm() {
 
   return (
     <>
-      <h2>How well are you understanding the content?</h2>
-      <form>
-        <div>
-          Understanding?
-          <input
-            data-testid="input"
-            type="number"
-            onChange={handleChangeUnderstanding}
-            value={inputUnderstanding}
-          />
-        </div>
-        <div>
-          <button onClick={handleAddUnderstanding} data-testid="next">
-            <Link to="/supportedForm">NEXT</Link>
-          </button>
-        </div>
-      </form>
+      <main className="understanding">
+        <h2>How well are you understanding the content?</h2>
+        <form>
+          <div>
+            Understanding?
+            <input
+              data-testid="input"
+              type="number"
+              onChange={handleChangeUnderstanding}
+              value={inputUnderstanding}
+            />
+          </div>
+          <div>
+            <button onClick={handleAddUnderstanding} data-testid="next">
+              <Link to="/supportedForm">NEXT</Link>
+            </button>
+          </div>
+        </form>
+      </main>
     </>
   );
 }

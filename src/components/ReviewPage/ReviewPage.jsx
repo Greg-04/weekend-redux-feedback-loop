@@ -24,7 +24,6 @@ function ReviewPage() {
         dispatch({
           type: 'RESET_FEEDBACK',
         });
-        console.log('reset feeling', feeling);
       })
       .catch((error) => {
         console.log('Error:', error);

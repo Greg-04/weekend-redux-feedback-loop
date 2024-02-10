@@ -1,8 +1,10 @@
 -- Database should be prime_feedback
+--Tests failed with the name "prime_feedback", changed name to "feedback"
 
 -- Switch to "prime_feedback" before making:
 -- Table to store the feedback
-CREATE TABLE "prime_feedback" (
+
+CREATE TABLE "feedback" (
   "id" serial primary key,
   "feeling" INT not null,
   "understanding" INT not null,
@@ -12,6 +14,7 @@ CREATE TABLE "prime_feedback" (
   "date" date not null default CURRENT_DATE
 ); 
 
--- Sample feedback item
-INSERT INTO "prime_feedback" ("feeling", "understanding", "support", "comments")
+INSERT INTO "feedback" ("feeling", "understanding", "support", "comments")
 VALUES (4, 4, 5, 'Doing Great!');
+
+SELECT * FROM "feedback" ORDER BY "id";
